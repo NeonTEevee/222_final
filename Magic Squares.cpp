@@ -5,9 +5,6 @@ int main ()
 	scanf("%d %d %d", &x, &y, &z);
 	int a[x][x], b[y][y], c[z][z];
 	
-	for(i=0; i<=400; i++)
-		sum[i] = 0;
-	
 	for(i=0; i<x; i++)
 	{
 		for(j=0; j<x; j++)
@@ -32,6 +29,8 @@ int main ()
 	
 	n = 0;							//A
 	check = 1;
+	for(i=0; i<=400; i++)
+		sum[i] = 0;
 	for(i=0; i<x; i++)
 	{
 		if(i == 0)
@@ -53,7 +52,7 @@ int main ()
 				i++;
 				j--;
 			}
-			j = 0;
+			i = 0;
 			n++;
 		}
 		for(j=0; j<x; j++)
@@ -84,6 +83,8 @@ int main ()
 	
 	n = 0;							//B
 	check = 1;
+	for(i=0; i<=400; i++)
+		sum[i] = 0;
 	for(i=0; i<y; i++)
 	{
 		if(i == 0)
@@ -105,7 +106,7 @@ int main ()
 				i++;
 				j--;
 			}
-			j = 0;
+			i = 0;
 			n++;
 		}
 		for(j=0; j<y; j++)
@@ -136,6 +137,8 @@ int main ()
 	
 	n = 0;							//C
 	check = 1;
+	for(i=0; i<=400; i++)
+		sum[i] = 0;
 	for(i=0; i<z; i++)
 	{
 		if(i == 0)
@@ -157,7 +160,7 @@ int main ()
 				i++;
 				j--;
 			}
-			j = 0;
+			i = 0;
 			n++;
 		}
 		for(j=0; j<z; j++)
