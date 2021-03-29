@@ -76,9 +76,9 @@ int main ()
 			check = 0;
 	}
 	if(check == 0) {
-		printf("no\n");
-	} else {
 		printf("yes\n");
+	} else {
+		printf("no\n");
 	}
 	
 	n = 0;							//B
@@ -130,9 +130,9 @@ int main ()
 			check = 0;
 	}
 	if(check == 0) {
-		printf("no\n");
-	} else {
 		printf("yes\n");
+	} else {
+		printf("no\n");
 	}
 	
 	n = 0;							//C
@@ -184,8 +184,10 @@ int main ()
 			check = 0;
 	}
 	if(check == 0) {
-		printf("no\n");
-	} else {
 		printf("yes\n");
+	} else {
+		printf("no\n");
 	}
+	
+	return 0;
 }
