@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-	int i, j, x, y, z, n, check, sum[400], max = 0;
+	int i, j, x, y, z, n, m, check, sum[400], max = 0;
 	scanf("%d %d %d", &x, &y, &z);
 	int a[x][x], b[y][y], c[z][z];
 	
@@ -55,6 +55,19 @@ int main ()
 			j = 0;
 			n++;
 		}
-		
+		for(j=0; j<x; j++)
+		{
+			sum[n]+=a[i][j];
+		}
+		n++;
 	}
+	for(j=0; j<x; j++)
+	{
+		for(i=0; i<x; i++)
+		{
+			sum[n]+=a[i][j];
+		}
+		n++;
+	}
+	max = n;
 }
