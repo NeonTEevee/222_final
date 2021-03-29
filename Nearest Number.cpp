@@ -5,20 +5,13 @@ int main ()
 	scanf("%d %d", &k, &n);
 	int digit[5];
 	
-	j = 1;
-	check = 0;
-	for(i=10; i<=k*10; i*=10)
-	{
-		digit[check] = (k%i)/j;
-		j*=10;
-		check++;
-		printf("Digit[%d] = %d\n", check, digit[check-1]);
-	}
-	
-	digit[0]++;
-	m = 1;
+	for(i=0; i<=5; i++)
+		digit[i] = 0;
+		
 	for(i=k+1; i<32750; i++)
 	{
+		check = 0;
+		m = 1;
 		for(j=10; j<=i*10; j*=10)
 		{
 			digit[check] = (i%j)/m;
@@ -27,7 +20,7 @@ int main ()
 		}
 		for(j=0; j<5; j++)
 		{
-			if(digit[j] = n)
+			if(digit[j] == n)
 			{
 				printf("%d", i);
 				return 0;
